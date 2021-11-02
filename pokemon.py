@@ -1,4 +1,4 @@
-print("Welcome to the Pokemon World ")
+print("Welcome to the Pokemon World")
 name = input("What is your name? ")
 print("Hello " + name)
 starter = input("Which starter would you like to have by your side? You can choose from Chimchar the fire type, Turtwig the grass type and Prinplup the water type. Just type the name of the starter you want. ")
@@ -32,12 +32,12 @@ elif battle == "attack" and nameCheck == "n":
 if battle == "catch":
     print("You throw a pokeball at the opposing " + encounter + "!")
     print("You caught the " + encounter + "!")
-encounterCheck = input("Would you like to name your " + encounter + "? ")
-if encounterCheck == "y":
-    encounterName = input("Enter the desired name for your " + encounter + ". ")
-    print(encounterName + " has joined the team!")
-else:
-    print(encounter + " has joined the team!")
+    encounterCheck = input("Would you like to name your " + encounter + "? ")
+    if encounterCheck == "y":
+        encounterName = input("Enter the desired name for your " + encounter + ". ")
+        print(encounterName + " has joined the team!")
+    else:
+        print(encounter + " has joined the team!")
 
 print("You see a boy standing in front of you, he approaches you. Ben: Hello, you're " + name + " right? We heard someone new had just moved into town. Gymleader Brock is just around the corner. What do you think? Wanna fight me or do you feel confident enough to take on the Gym already?")
 path = input("Trainer or Gym? ")
@@ -56,6 +56,10 @@ if path == "trainer" and battle == "catch" and starter == "chimchar":
         if nameCheck != "n":
             print(nameStarter + " used Scratch! You defeated the opposing Goldeen!")
         else: print(starter + " used Scratch! You defeated the opposing Goldeen!")
+else:print("You challenged trainer Ben! Trainer Ben sends out Goldeen!")
+if nameCheck != "n":
+    print(nameStarter + " used Scratch! You defeated the opposing Goldeen!")
+else: print(starter + " used Scratch! You defeated the opposing Goldeen!")
 
 if path == "trainer" and battle == "catch" and starter == "turtwig":
     print("You challenged trainer Ben! Trainer Ben sends out Starly!")
@@ -68,6 +72,10 @@ if path == "trainer" and battle == "catch" and starter == "turtwig":
         if nameCheck != "n":
             print(nameStarter + " used Pound! You defeated the opposing Goldeen!")
         else: print(starter + " used Pound! You defeated the opposing Goldeen!")    
+else:print("You challenged trainer Ben! Trainer Ben sends out Goldeen!")
+if nameCheck != "n":
+    print(nameStarter + " used Pound! You defeated the opposing Goldeen!")
+else: print(starter + " used Pound! You defeated the opposing Goldeen!")
 
 if path == "trainer" and battle == "catch" and starter == "prinplup":
     print("You challenged trainer Ben! Trainer Ben sends out Cherubi!")
@@ -80,6 +88,10 @@ if path == "trainer" and battle == "catch" and starter == "prinplup":
         if nameCheck != "n":
             print(nameStarter + " used Pound! You defeated the opposing Goldeen!")
         else: print(starter + " used Pound! You defeated the opposing Goldeen!")
+else:print("You challenged trainer Ben! Trainer Ben sends out Goldeen!")
+if nameCheck != "n":
+    print(nameStarter + " used Pound! You defeated the opposing Goldeen!")
+else: print(starter + " used Pound! You defeated the opposing Goldeen!")
 
 
 #ik maak een pokemon game voor school feelsgood
