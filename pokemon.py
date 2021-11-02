@@ -28,6 +28,7 @@ if battle == "attack" and nameCheck != "n":
 else:
     print(starter + " attacked!")
     print(starter + " has defeated " + encounter + "!")
+
 if battle == "catch":
     print("You throw a pokeball at the opposing " + encounter + "!")
     print("You caught the " + encounter + "!")
@@ -38,9 +39,23 @@ if encounterCheck == "y":
 else:
     print(encounter + " has joined the team!")
 
-
-
-
+print("You see a boy standing in front of you, he approaches you. Ben: Hello, you're " + name + " right? We heard someone new had just moved into town. Gymleader Brock is just around the corner. What do you think? Wanna fight me or do you feel confident enough to take on the Gym already?")
+path = input("Trainer or Gym?")
+if path == "trainer" and encounterCheck == "y" and battle == "catch" and starter == "chimchar":
+    print("You challenged trainer Ben! Trainer Ben sends out Goldeen!")
+    tactic = input("Would you like to attack or switch out to " + encounterName + " ? ")
+    if tactic == "switch":
+        print("You switched out to " + encounterName + " ! " + encounterName + "used Pound!")
+if path == "trainer" and encounterCheck == "y" and battle == "catch" and starter == "turtwig":
+    print("You challenged trainer Ben! Trainer Ben sends out Starly!")
+    tactic = input("Would you like to attack or switch out to " + encounterName + " ? ")
+    if tactic == "switch":
+        print("You switched out to " + encounterName + " ! " + encounterName + "used Scratch!")
+if path == "trainer" and encounterCheck == "y" and battle == "catch" and starter == "prinplup":
+    print("You challenged trainer Ben! Trainer Ben sends out Cherubi!")
+    tactic = input("Would you like to attack or switch out to " + encounterName + " ? ")
+    if tactic == "switch":
+        print("You switched out to " + encounterName + " ! " + encounterName + "used Pound!")
 
 
 #ik maak een pokemon game voor school feelsgood
