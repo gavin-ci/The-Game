@@ -72,7 +72,7 @@ if path == "trainer" and battle == "catch" and starter == "turtwig":
         if nameCheck != "n":
             print(nameStarter + " used Pound! You defeated the opposing Goldeen!")
         else: print(starter + " used Pound! You defeated the opposing Goldeen!")    
-else:print("You challenged trainer Ben! Trainer Ben sends out Goldeen!")
+else:print("You challenged trainer Ben! Trainer Ben sends out Goldeen! You send out ")
 if nameCheck != "n":
     print(nameStarter + " used Pound! You defeated the opposing Goldeen!")
 else: print(starter + " used Pound! You defeated the opposing Goldeen!")
@@ -93,5 +93,15 @@ if nameCheck != "n":
     print(nameStarter + " used Pound! You defeated the opposing Goldeen!")
 else: print(starter + " used Pound! You defeated the opposing Goldeen!")
 
+#if path == "Gym":
+#print("You challenged Gym Leader Roark! Roark sent out Geodude!")
+#tactic = input("Would you like to attack or switch out to")
 
-#ik maak een pokemon game voor school feelsgood
+
+
+
+
+
+#log naar console vragen
+#kan de code korter?
+#win en faal eindes nog
