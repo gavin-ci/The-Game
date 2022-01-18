@@ -91,17 +91,15 @@ if path == "trainer" and battle == "catch" and starter == "prinplup":
 else:print("You challenged trainer Ben! Trainer Ben sends out Goldeen!")
 if nameCheck != "n":
     print(nameStarter + " used Pound! You defeated the opposing Goldeen!")
-else: print(starter + " used Pound! You defeated the opposing Goldeen!")
+else:print(starter + " used Pound! You defeated the opposing Goldeen!")
 
-#if path == "Gym":
-#print("You challenged Gym Leader Roark! Roark sent out Geodude!")
-#tactic = input("Would you like to attack or switch out to")
-
-
-
-
-
-
-#log naar console vragen
-#kan de code korter?
-#win en faal eindes nog
+if path == "gym" and battle == "catch" and encounterCheck == "y":
+    print("You challenged Gym Leader Roark! Roark sent out Geodude!")
+    tactic = input("Would you like to attack or switch out to " + encounterName + " ? ")
+    if tactic == "switch" and encounterCheck == "y":
+        print("You switched out to " + encounterName + "! " + encounterName + " used Pound! It was a critical hit! The opposing Geodude has fainted! Congratulations " + name + " You have won the Rock Badge!")
+    else:print("You switched out to " + encounter + "! " + encounter + " used Pound! It was a critical hit! The opposing Geodude has fainted! Congratulations " + name + " You have won the Rock Badge!")
+else:print("You challenged Gym Leader Roark! Roark sent out Geodude!")
+if nameCheck != "n":
+    print(nameStarter + " used Pound! It wasn't very effective! " + name + " whited out... THE END")
+else: print(starter + " used Pound! You defeated the opposing Geodude! " + name + " whited out... THE END")
